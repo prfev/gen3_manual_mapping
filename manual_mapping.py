@@ -13,5 +13,5 @@ while True:
     feedback = base_cyclic.RefreshFeedback()
     input("Pressione ENTER para apresentar o valor atual das juntas: ")
     for i in range(0,6):
-        lista_valor_atual_juntas.append(feedback.actuators[i].position)
+        lista_valor_atual_juntas.append(round(feedback.actuators[i].position, 3))
     print(lista_valor_atual_juntas)
